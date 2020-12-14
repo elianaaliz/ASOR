@@ -6,6 +6,6 @@
 
 int main(){
 	char *path = "/home/cursoredes/Documents/T2/file5.txt";
-	open(path, O_CREAT, 645);
+	open(path, O_CREAT, 0645);
 	return 1;
 }
