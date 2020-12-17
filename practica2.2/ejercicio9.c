@@ -24,7 +24,7 @@ int main(int argc, char *argv[]){
 	   printf("I-nodo: %ld\n", (long) sb.st_ino);
 
            printf("File type: ");
-
+	   // Incluyo todo pero solo nos piden: tipo de fichero (directorio, enlace simbólico o fichero ordinario)
 	   switch (sb.st_mode & S_IFMT) {
            case S_IFBLK:  printf("block device\n");            break;
            case S_IFCHR:  printf("character device\n");        break;
